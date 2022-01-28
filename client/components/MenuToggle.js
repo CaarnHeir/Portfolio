@@ -5,7 +5,7 @@ import { Box } from "@chakra-ui/react"
 const MenuToggle = ({ toggle, isOpen }) => {
   return (
     <Box display={{ base: "block", md: "none" }} onClick={toggle}>
-      {isOpen ? <CloseIcon /> : <img src='/sun.svg'/>}
+      {isOpen ? <img src='/sun.svg'/> : <img src='/sun.svg'/>}
     </Box>
   )
 };
