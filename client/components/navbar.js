@@ -1,6 +1,6 @@
 // import { useColorMode } from "@chakra-ui/react";
 import React, { useState } from 'react';
-import { Image } from '@chakra-ui/react';
+import { Image, Link } from '@chakra-ui/react';
 import { useColorMode } from '@chakra-ui/react';
 
 import NavBarContainer from "./NavBarContainer";
@@ -16,10 +16,10 @@ const Navbar = (props) => {
   const handleClick = () => setToggleColorMode(!toggleColorMode)
   return (
     <NavBarContainer {...props}>
-      <Logo/>
+      <Link href='/'><Logo/></Link>
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
-      <button onClick={toggleColorMode}><Image width={70} height={70} src='/moon.svg'/></button>
+      <button onClick={toggleColorMode}><Image width={70} height={50} src='/moon.svg'/></button>
     </NavBarContainer>
     )
 };
