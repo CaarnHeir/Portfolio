@@ -1,19 +1,26 @@
-import { Container } from "@chakra-ui/react";
-import Link from 'next/link'
+// import { useColorMode } from "@chakra-ui/react";
+import React, { useState } from 'react';
+import { Image } from '@chakra-ui/react';
 
-const Navbar = () => {
+import NavBarContainer from "./NavBarContainer";
+import MenuToggle from './MenuToggle';
+import MenuLinks from './MenuLinks';
+import Logo from './Logo';
+
+const Navbar = (props) => {
+  // const { toggleColorMode } = useColorMode();
+  const [isOpen, setIsOpen] = useState(false);
+  
+  const toggle = () => setIsOpen(!isOpen)
+  
   return (
-    <>
-        <div>
-            <h1>PORTFOLIO TITLE</h1>
-            <h1>LOGO</h1>
-        </div>
-        <Container>
-            <Link href='/'><a>Resume</a></Link>
-            <Link href='/'><a>Blog</a></Link>
-        </Container>
-    </>
-  )
+    <NavBarContainer {...props}>
+      <Logo/>
+      <MenuToggle toggle={toggle} isOpen={isOpen} />
+      <MenuLinks isOpen={isOpen} />
+      <Image width={70} height={70} src='/moon.svg'/>
+    </NavBarContainer>)
+  
 };
 
 export default Navbar;
