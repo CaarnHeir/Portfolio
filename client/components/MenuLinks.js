@@ -1,9 +1,12 @@
 // import React from 'react';
 import { Stack, Box } from '@chakra-ui/react'
+import { Image } from '@chakra-ui/react';
+import { useColorMode } from '@chakra-ui/react';
 
 import MenuItem from './MenuItem'
 
 const MenuLinks = ({ isOpen }) => {
+  const { toggleColorMode } = useColorMode();
   return (
     <Box
     display={{ base: isOpen ? "block" : "none", md: "block" }}
@@ -17,6 +20,7 @@ const MenuLinks = ({ isOpen }) => {
     >
     <MenuItem to="/resume">Resume</MenuItem>
     <MenuItem to="/blog">Blog</MenuItem>
+    <button onClick={toggleColorMode}><Image width={70} height={50} src='/moon.svg'/></button>
     </Stack>
     </Box>
   )
