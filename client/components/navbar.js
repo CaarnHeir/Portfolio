@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import {  Link } from '@chakra-ui/react';
 // import { useColorMode } from '@chakra-ui/react';
 
-import NavBarContainer from "./NavBarContainer";
-import MenuToggle from './MenuToggle';
-import MenuLinks from './MenuLinks';
+import NavBarContainer from "./NavbarSubComps/NavBarContainer";
+import MenuToggle from './NavbarSubComps/MenuToggle';
+import MenuLinks from './NavbarSubComps/MenuLinks';
 import Logo from './Logo';
 
 const Navbar = (props) => {

@@ -9,9 +9,12 @@ const NavBarContainer = ({ children, ...props }) => {
         wrap="wrap"
         w="100%"
         mb={8}
-        p={8}
-        // bg={["primary.500", "primary.500", "transparent", "transparent"]}
-        // color={["white", "white", "primary.700", "primary.700"]}
+        mt={4}
+        // bg={['blue.700', 'blue.700', 'blue.700', 'teal.700']}
+        // border='1px' 
+        // borderColor='blue.700'
+        p={2}
+        // color={["black", "black", "primary.700", "primary.700"]}
         {...props}
       >
         {children}
