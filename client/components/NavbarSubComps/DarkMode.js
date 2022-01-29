@@ -1,12 +1,7 @@
-// import React from 'react';
 import { Box, Image } from "@chakra-ui/react"
-import { useState } from 'react'
 
-const DarkMode = ({ toggleColorMode }) => {
-    const  [toggleDark, setIsDark] = useState(false)
-
-    const toggle = () => setIsDark(!toggleDark)
-
+const DarkMode = ({ toggleColorMode, toggle, toggleDark }) => {
+    
   return (
     <Box display={{ base: "block" }} onClick={toggleColorMode}>
         <Box onClick= {toggle}>

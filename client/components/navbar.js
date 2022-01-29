@@ -1,4 +1,3 @@
-// import { useColorMode } from "@chakra-ui/react";
 import React, { useState } from 'react';
 import {  Link } from '@chakra-ui/react';
 // import { useColorMode } from '@chakra-ui/react';
@@ -8,16 +7,17 @@ import MenuToggle from './NavbarSubComps/MenuToggle';
 import MenuLinks from './NavbarSubComps/MenuLinks';
 import Logo from './Logo';
 
-const Navbar = (props) => {
+const Navbar = ({toggleColorMode, toggle, toggleDark}) => {
 
   const [isOpen, setIsOpen] = useState(false);
-  
-  const toggle = () => setIsOpen(!isOpen)
+  // const { toggleColorMode } = useColorMode();
+
+  const toggleMenu = () => setIsOpen(!isOpen)
   return (
-    <NavBarContainer {...props}>
+    <NavBarContainer >
       <Link href='/'><Logo/></Link>
-      <MenuToggle toggle={toggle} isOpen={isOpen} />
-      <MenuLinks isOpen={isOpen} />
+      <MenuToggle toggleMenu={toggleMenu} isOpen={isOpen} />
+      <MenuLinks isOpen={isOpen} toggleColorMode={toggleColorMode} toggle={toggle} toggleDark={toggleDark} />
     </NavBarContainer>
     )
 };

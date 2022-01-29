@@ -1,13 +1,13 @@
-// import React from 'react';
 import { Stack, Box} from '@chakra-ui/react'
-import { useColorMode } from '@chakra-ui/react';
-import { useState } from 'react';
+
 
 import MenuItem from './MenuItem'
 import DarkMode from './DarkMode';
 
-const MenuLinks = ({ isOpen }) => {
-  const { toggleColorMode } = useColorMode();
+const MenuLinks = ({ isOpen,toggleColorMode, toggle, toggleDark }) => {
+
+  
+
   return (
     <Box
     display={{ base: isOpen ? "block" : "none", md: "block" }}
@@ -21,7 +21,7 @@ const MenuLinks = ({ isOpen }) => {
     >
     <MenuItem to="/resume">Resume</MenuItem>
     <MenuItem to="/blog">Blog</MenuItem>
-    <DarkMode toggleColorMode={toggleColorMode}/>
+    <DarkMode toggleColorMode={toggleColorMode} toggle={toggle} toggleDark ={toggleDark}/>
     </Stack>
     </Box>
   )
