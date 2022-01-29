@@ -1,5 +1,5 @@
 import { useColorMode } from '@chakra-ui/react';
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 import Footer from './Footer';
 import Navbar from './Navbar'
@@ -13,7 +13,12 @@ const Layout = ({ children }) => {
   return (
   <div>
     <Navbar toggleColorMode={toggleColorMode} toggle={toggle} toggleDark ={toggleDark}/>
-        { children }
+        {/* { children } */}
+        { React.cloneElement(children, {
+          toggleColorMode: toggleColorMode,
+          toggle: toggle,
+          toggleDark: toggleDark,
+        })}
     <Footer/>
   </div>
   )

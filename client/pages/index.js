@@ -5,10 +5,10 @@ import Layout from '../components/Layout'
 
 import Letters from '../components/LetterComps/Letters'
 
-export default function Home() {
+export default function Home({toggleDark}) {
   return (
     <div>
-     <Letters />
+     <Letters toggleDark={toggleDark} />
     </div>
   )
 }
