@@ -7,7 +7,7 @@ const Letters = ({ toggleDark}) => {
 return (
   
     <Flex justifyContent='center' height={500}>
-        {toggleDark ?  <SvgLettersFire/> : <SvgLettersWaves/> }
+        {toggleDark ?  <SvgLettersWaves/> : <SvgLettersFire/> }
     </Flex>
 )
 };
