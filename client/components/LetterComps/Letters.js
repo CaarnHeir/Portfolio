@@ -1,12 +1,13 @@
-import { Flex, Image } from '@chakra-ui/react';
-import React, {useState} from 'react';
+import { Flex } from '@chakra-ui/react';
+import SvgLettersFire from './/SvgLettersFire'
+import SvgLettersWaves from './/SvgLettersWaves'
 
 const Letters = ({ toggleDark}) => {
   
 return (
   
-    <Flex justifyContent='center'>
-        {toggleDark ?  <Image width={70} height={50} src='/sun.svg'/>: <Image width={70} height={50} src='/moon.svg'/>}
+    <Flex justifyContent='center' height={500}>
+        {toggleDark ?  <SvgLettersFire/> : <SvgLettersWaves/> }
     </Flex>
 )
 };
