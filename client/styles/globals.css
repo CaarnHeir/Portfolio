@@ -15,6 +15,15 @@ a {
   box-sizing: border-box;
 }
 
+footer {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+  color: #777;
+  border-top: 1px solid #eaeaea;
+}
+
 @font-face {
   font-family: 'Montserrat';
   src: url('../public/fonts/Montserrat-VariableFont_wght.ttf');
