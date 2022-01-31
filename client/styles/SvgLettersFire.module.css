@@ -1,14 +1,17 @@
+
 .svg {
-    transition: 1s font-size;
+    /* transition: 1s font-size;
+    transition: 1s top; */
     position: absolute;
     top: 118px;
-    left: 220px;
+    left: 0;
     
     
 }
 .svg rect {
     fill: white;
-    mask: url(#mask)
+    mask: url(#mask);
+    width: 100%;
 }
 
 .svg > rect {
@@ -20,6 +23,59 @@
 }
 @media screen and (max-width: 1200px) {
     .svg {
+        font-size:15em;
+        top: 100px;
+        height: 500px
+    }
+    .video {
+        height: 70% 
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .svg {
+        font-size:15em;
+        top: 150px;
+        height: 500px
+    }
+    .video {
+        height: 70% 
+    }
+    .svg > rect{
+        height: 90%
+    }
+}
+@media screen and (max-width: 526px) {
+    .svg {
         font-size:10em;
+        top: 180px;
+        height: 400px
+    }
+    .video {
+        height: 80% 
+    }
+    .svg rect{
+        y:50;
+    }
+    .svg > rect{
+        height: 80%;
+        y: 50;
+    }
+}
+@media screen and (max-width: 479px) {
+    .svg {
+        font-size:10em;
+        top: 270px;
+        height: 400px
+    }
+    .video {
+        height: 80% 
+    }
+    .svg rect{
+        y:50;
+    }
+    .svg > rect{
+        height: 80%;
+        y: 50;
     }
 }

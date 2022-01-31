@@ -5,7 +5,7 @@ import { Flex } from '@chakra-ui/react'
 const SvgLettersWaves = () => {
   return (
       <Flex>
-        <video className={styles.video} autoPlay playsInline muted loop preload><source src='/Waves.mp4' type='video/mp4'/></video>
+        <video className={styles.video} autoPlay playsInline muted loop><source src='/Waves.mp4' type='video/mp4'/></video>
         <Flex justifyContent= 'center'>
             <svg className={styles.svg} height='85%' width='100%' fontFamily='Montserrat' fontSize='35em' fontWeight='bold' text-transform='uppercase'>
                 <defs>
