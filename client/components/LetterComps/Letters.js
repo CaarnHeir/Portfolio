@@ -2,7 +2,7 @@ import { Flex } from '@chakra-ui/react';
 import SvgLettersFire from './/SvgLettersFire'
 import SvgLettersWaves from './/SvgLettersWaves'
 
-const Letters = ({ toggleDark}) => {
+const Letters = ({ toggleDark }) => {
   
 return (
   
