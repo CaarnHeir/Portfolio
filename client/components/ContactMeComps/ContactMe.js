@@ -1,9 +1,11 @@
 import { Center } from '@chakra-ui/react'
 
+import ContactForm from './ContactForm';
+
 const ContactMe = () => {
     return (
-        <Center bg='green' h='1000px' color='white'>
-      Contact Me
+        <Center h='800px'>
+      <ContactForm/>
     </Center>
     )
   };

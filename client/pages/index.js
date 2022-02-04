@@ -3,7 +3,7 @@ import Letters from '../components/LetterComps/Letters'
 import Blurb from '../components/BlurbComps/Blurb'
 import Portfolio from '../components/PortfolioComps/Portfolio'
 import ContactMe from '../components/ContactMeComps/ContactMe'
-import {  Center, Grid, GridItem, VStack } from '@chakra-ui/react'
+import {  Center, Skeleton, Flex } from '@chakra-ui/react'
 
 export default function Home({toggleDark}) {
   return (
@@ -17,8 +17,12 @@ export default function Home({toggleDark}) {
     <Center margin='10px' position='static'>
       <Letters toggleDark={toggleDark} />
     </Center>
+    <Center h='200px'></Center>
+    <Skeleton startColor='#FFFFFF' endColor='#1A202C' height='20px'  justifyContent='center' fadeDuration='.01' speed='5'/>
     <Blurb/>
+    <Skeleton startColor='#FFFFFF' endColor='#1A202C' height='20px'  justifyContent='center' fadeDuration='.01' speed='5'/>
     <Portfolio/>
+    <Skeleton startColor='#FFFFFF' endColor='#1A202C' height='20px'  justifyContent='center' fadeDuration='.01' speed='5'/>
     <ContactMe />
     </>
   )
