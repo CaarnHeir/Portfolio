@@ -14,7 +14,7 @@ export default function Home({toggleDark}) {
     
     // </>
     <>
-    <Center margin='10px'>
+    <Center margin='10px' position='static'>
       <Letters toggleDark={toggleDark} />
     </Center>
     <Blurb/>

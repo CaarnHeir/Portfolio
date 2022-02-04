@@ -5,8 +5,7 @@ import SvgLettersWaves from './/SvgLettersWaves'
 const Letters = ({ toggleDark }) => {
   
 return (
-  
-    <Flex justifyContent='center' height={500}>
+    <Flex justifyContent='center' height={500} mt='200px' position='static'>
         {toggleDark ?  <SvgLettersWaves/> : <SvgLettersFire/> }
     </Flex>
 )
