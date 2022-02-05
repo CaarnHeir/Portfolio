@@ -12,9 +12,9 @@ export default async (req, res) => {
   `;
 
   const data = {
-    to: 'SENDER-EMAIL',
-    from: 'RECEIVER-EMAIL',
-    subject: `New message from ${body.name}`,
+    to: 'caarnheir@gmail.com',
+    from: 'caarnheir@gmail.com',
+    subject: `PORTFOLIO WEBSITE INBOUND ${body.name}`,
     text: message,
     html: message.replace(/\r\n/g, '<br />'),
   };

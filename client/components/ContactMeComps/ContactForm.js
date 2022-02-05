@@ -7,6 +7,13 @@ const ContactForm = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
+    const clear = () => {
+        setName('');
+        setEmail('');
+        setMessage('');
+      };
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
         const data = {
@@ -14,11 +21,17 @@ const ContactForm = () => {
             email,
             message,
         };
+        fetch('/api/contact', {
+            method: 'post',
+            body: JSON.stringify(data),
+          });
+          clear();
     };
 
     return (
         <Flex width='100%' justifyContent='center'>
             <VStack width='500px'>
+                <form onSubmit={handleSubmit}>
             <FormControl >
                 <FormLabel htmlFor='name'>Full Name</FormLabel>
                 <Input
@@ -38,7 +51,7 @@ const ContactForm = () => {
                     type='email'
                     value={email}
                     variant='filled'
-                    placeholder='email@provider.com'
+                    placeholder='Email@provider.com'
                     onChange={e => setEmail(e.target.value)}
                     isRequired 
                 />
@@ -55,39 +68,19 @@ const ContactForm = () => {
                 />
             </FormControl>
                 <Button
-                    
+                    type='submit'
                     // isLoading
                     // loadingText='Submitting'
                     colorScheme='teal'
                     variant='outline'
                     width='500px'
+                    onClick={handleSubmit}
                 >
                     Submit
                 </Button>
+                </form>
             </VStack>
         </Flex>
-        // <form onSubmit={handleSubmit}>
-        //   <label htmlFor="name">Name:</label>
-        //   <input
-        //     id="name"
-        //     type="text"
-        //     onChange={e => setName(e.target.value)}
-        //   />
-        //   <label htmlFor="email">Email:</label>
-        //   <input
-        //     id="email"
-        //     type="email"
-        //     onChange={e => setEmail(e.target.value)}
-        //   />
-        //   <label htmlFor="message">Message:</label>
-        //   <textarea
-        //     id="message"
-        //     type="text"
-        //     rows="4"
-        //     onChange={e => setMessage(e.target.value)}
-        //   />
-        //   <button type="submit">Send</button>
-        // </form>
   )
 };
 
