@@ -7,12 +7,6 @@ import {  Center, Skeleton, Flex } from '@chakra-ui/react'
 
 export default function Home({toggleDark}) {
   return (
-    // <>
-    // <div display='block' className={styles.LetterDiv}>
-    //   <Letters toggleDark={toggleDark} />
-    // </div>
-    
-    // </>
     <>
     <Center margin='10px' position='static'>
       <Letters toggleDark={toggleDark} />

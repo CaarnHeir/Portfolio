@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import { FormControl, FormLabel, Input, Flex, VStack, Textarea, Button } from '@chakra-ui/react';
+import { useToast } from '@chakra-ui/react';
 
 
 const ContactForm = () => {
     const [name, setName ] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const toast = useToast()
 
     const clear = () => {
         setName('');
@@ -74,7 +76,13 @@ const ContactForm = () => {
                     colorScheme='teal'
                     variant='outline'
                     width='500px'
-                    onClick={handleSubmit}
+                    onClick={()=>toast({
+                        title: 'Outreach processed.',
+                        description: "I look forward to speaking with you soon!",
+                        status: 'success',
+                        duration: 9000,
+                        isClosable: true,
+                      })}
                 >
                     Submit
                 </Button>

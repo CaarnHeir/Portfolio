@@ -1,9 +1,14 @@
+import { Center } from '@chakra-ui/react';
+import ResumeIcons from '../components/ResumeComps/ResumeIcons'
+
 
 const resume = () => {
   return (
-  <div>
-      <h1>RESUME PAGE</h1>
-  </div>
+  <>
+  <ResumeIcons />
+
+
+  </>
   )
 };
 
