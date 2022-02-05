@@ -22,7 +22,7 @@ const Portfolio = () => {
   }
 
   return (
-    <Center  h='1000px'>
+    <Center  h='700px'>
       <SimpleGrid  spacing='70px' columns={[2, null, 3]}  >
           <GridItem>
             <Box maxW='md' borderWidth='1px' borderRadius='lg' overflow='hidden'>

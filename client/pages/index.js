@@ -18,11 +18,17 @@ export default function Home({toggleDark}) {
       <Letters toggleDark={toggleDark} />
     </Center>
     <Center h='200px'></Center>
-    <Skeleton startColor='#FFFFFF' endColor='#1A202C' height='20px'  justifyContent='center' fadeDuration='.01' speed='5'/>
+    <Skeleton startColor='gray.400' endColor='#1A202C' height='20px'  justifyContent='center' fadeDuration='.01' speed='5'/>
     <Blurb toggleDark={toggleDark}/>
-    <Skeleton startColor='#FFFFFF' endColor='#1A202C' height='20px'  justifyContent='center' fadeDuration='.01' speed='5'/>
+    <Skeleton startColor='gray.400' endColor='#1A202C' height='20px'  justifyContent='center' fadeDuration='.01' speed='5'/>
+    <Center h='200px'>
+      <Flex fontFamily='Montserrat' fontSize={60} fontWeight='bold'>PORTFOLIO:</Flex>
+    </Center>
     <Portfolio/>
-    <Skeleton startColor='#FFFFFF' endColor='#1A202C' height='20px'  justifyContent='center' fadeDuration='.01' speed='5'/>
+    <Skeleton startColor='gray.400' endColor='#1A202C' height='20px'  justifyContent='center' fadeDuration='.01' speed='5'/>
+    <Center h='200px'>
+      <Flex fontFamily='Montserrat' fontSize={60} fontWeight='bold'>CONTACT ME:</Flex>
+    </Center>
     <ContactMe />
     </>
   )
