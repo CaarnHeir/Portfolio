@@ -19,7 +19,7 @@ export default function Home({toggleDark}) {
     </Center>
     <Center h='200px'></Center>
     <Skeleton startColor='#FFFFFF' endColor='#1A202C' height='20px'  justifyContent='center' fadeDuration='.01' speed='5'/>
-    <Blurb/>
+    <Blurb toggleDark={toggleDark}/>
     <Skeleton startColor='#FFFFFF' endColor='#1A202C' height='20px'  justifyContent='center' fadeDuration='.01' speed='5'/>
     <Portfolio/>
     <Skeleton startColor='#FFFFFF' endColor='#1A202C' height='20px'  justifyContent='center' fadeDuration='.01' speed='5'/>

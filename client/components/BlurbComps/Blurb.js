@@ -1,10 +1,16 @@
-import {Flex, Center, Container} from '@chakra-ui/react'
+import {Image, Center, Container, Flex} from '@chakra-ui/react'
 
-const Blurb = () => {
+const Blurb = ({ toggleDark }) => {
   return (
     
-    <Center  h='700px'  alignItems='center' mt='40px' >
+    <Center  h='700px'  alignItems='center' justifyContent='space-between' >
+      <Flex>
+        { toggleDark ? <Image src='./open_bracket_white.png'/> : <Image src='./open_bracket_black.png'/> }
+      </Flex>
       <Container fontFamily='Montserrat' fontSize={25} fontWeight='bold'>I am a fullstack engineer in the pursuit of innovative technologial endevours. My background in Procurement and Consulting provides me with a unique perspective on web/application development.</Container>
+      <Flex>
+        { toggleDark ? <Image src='./open_bracket_white_right.png'/> : <Image src='./open_bracket_black_right.png'/> }
+      </Flex>
     </Center>
   )
 };
