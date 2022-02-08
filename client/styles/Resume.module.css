@@ -1,0 +1,9 @@
+.header {
+    font-size: 400%;
+}
+
+@media screen and (max-width: 550px) {
+    .header {
+        font-size: 200%;
+    }
+}

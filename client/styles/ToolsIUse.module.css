@@ -1,0 +1,19 @@
+.image {
+    height: 100px;
+    width: 100px;
+}
+.imagehoriz {
+    height: 100px;
+    width: 200px;
+}
+
+@media screen and (max-width: 480px) {
+    .image {
+        height: 50px;
+        width: 50px;
+    }
+    .imagehoriz {
+        height: 50px;
+        width: 100px;
+    }
+}

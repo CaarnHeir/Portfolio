@@ -1,0 +1,31 @@
+.image {
+    border-radius: 50%;
+    box-sizing: content-box ;
+    padding: 10px;
+}
+
+.name {
+    font-family:'Montserrat';
+    font-size: 650%;
+    font-weight: bold;
+    margin-right: '30px';
+}
+
+@media screen and (max-width: 1100px) {
+    .image {
+        padding:20px;
+    }
+    .name {
+        font-size: 450%; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image {
+        /* margin-top: 100px; */
+        padding:20px;
+    }
+    .name {
+        font-size: 250%; 
+    }
+}

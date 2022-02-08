@@ -100,7 +100,7 @@ const Portfolio = () => {
                 {property.title}
               </Box>
               <HStack mt='4' ml='2'>
-                <a href='https://github.com/CaarnHeir/Application_Repo'>
+                <a href='https://github.com/CaarnHeir/Portfolio'>
                   <Button leftIcon={<FaGithub />}>
                     GitHub
                   </Button>

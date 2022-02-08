@@ -249,8 +249,7 @@
       -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
       -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
       box-shadow: 0 0 1px rgba(0,0,0,0.20);
-      
-    z-index: 15;
+      z-index: 15;
   }
   
   .directionl .desc,
@@ -264,11 +263,11 @@
   
   }
   
-  /* @media screen and (min-width: 400px ?? max-width: 660px) {
+  @media screen and (max-width: 660px) {
   
   .direction-l .desc,
   .direction-r .desc {
       margin: 1em 4em 0 4em;
-  } */
+  }
   
-  /* } */
+  }

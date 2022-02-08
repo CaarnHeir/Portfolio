@@ -1,11 +1,12 @@
 import { Center, Image, Flex, VStack } from "@chakra-ui/react";
+import styles from '../../styles/HeadShot.module.css'
 
 const HeadShot = () => {
   return (
-      <Center h = '500px' marginTop='200px' marginBottom='200px'>
+      <Center  marginTop='200px' marginBottom='100px'>
           <VStack>
-          <Image src='/Headshot.jpg' borderRadius='full' boxSize='400px'/>
-          <Flex fontFamily='Montserrat' fontSize={150} fontWeight='bold' marginRight='30px'>CAARN HEIR</Flex>
+          <Image className={styles.image} src='/Headshot.jpg'/>
+          <Flex className={styles.name}>CAARN HEIR</Flex>
           </VStack>
       </Center>
   )

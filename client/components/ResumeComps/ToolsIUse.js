@@ -1,44 +1,45 @@
 import { Center, WrapItem, Image, Wrap } from '@chakra-ui/react';
+import styles from '../../styles/ToolsIUse.module.css'
 import React from 'react';
 
 
 
 const ToolsIUse = () => {
   return (
-    <Center marginBottom='100px' >
-        <Wrap>
+    <Center marginBottom='100px'marginTop='50px' >
+        <Wrap alignItems='center'marginLeft='10px' marginRight='10px'>
           <WrapItem>
-            <Image src='/python.png' height='100px' width='100px' />
+            <Image className={styles.image} src='/python.png' />
           </WrapItem>
           <WrapItem>
-            <Image src='/django.png' height='100px' width='100px' marginRight='10px'/>
+            <Image src='/django.png' className={styles.image} marginRight='10px'/>
           </WrapItem>
           <WrapItem>
-            <Image src='/fastapi1.png' height='100px' width='100px'/>            
+            <Image src='/fastapi1.png' className={styles.image}/>            
           </WrapItem>
           <WrapItem>
-            <Image src='/mongodb1.png' height='100px' width='100px' />           
+            <Image src='/mongodb1.png'className={styles.image}/>           
           </WrapItem>
           <WrapItem>
-            <Image src='/nextjs.png' height='100px' width='200px'/>          
+            <Image src='/nextjs.png' className={styles.imagehoriz}/>          
           </WrapItem>
           <WrapItem>
-            <Image src='/react1.png' height='100px' width='100px' />         
+            <Image src='/react1.png' className={styles.image} />         
           </WrapItem>
           <WrapItem>
-            <Image src='/redux.png' height='100px' width='100px' />      
+            <Image src='/redux.png' className={styles.image} />      
           </WrapItem>
           <WrapItem>
-            <Image src='/postgresql.png' height='100px' width='100px' />
+            <Image src='/postgresql.png' className={styles.image} />
           </WrapItem>
           <WrapItem>
-            <Image src='/javascript.png' height='100px' width='100px'/>
+            <Image src='/javascript.png' className={styles.image}/>
           </WrapItem>
           <WrapItem>
-            <Image src='/html.png' height='100px' width='100px' />
+            <Image src='/html.png' className={styles.image} />
           </WrapItem>
           <WrapItem>
-            <Image src='/css.png' height='100px' width='100px' />
+            <Image src='/css.png' className={styles.image} />
           </WrapItem>
         </Wrap>
     </Center>
