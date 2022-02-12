@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from django.utils.translation import gettext_lazy as _
 
 
 # Create your models here.
@@ -18,7 +19,7 @@ class Post(models.Model):
     excerpt = models.TextField(null =True)
     content = models.TextField()
     published = models.DateField(default=timezone.now)
-    image = models.ImageField()
+    image = models.ImageField(_('Image'), upload_to=upload_to, default='posts/default.jpg')
     objects = models.Manager()
 
     class Meta:

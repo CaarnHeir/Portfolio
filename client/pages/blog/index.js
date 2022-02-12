@@ -1,16 +1,28 @@
-import React from "react";
+import { useEffect, useState } from "react";
+import Posts from '../../components/BlogComps/Posts'
+import PostLoadingComponent from '../../components/BlogComps/PostLoading'
 
-class index extends React.Component {
+function BlogList() {
+  const PostLoading = PostLoadingComponent(Posts);
+  const [BlogListState, setBlogListState] = useState({
+    loading: false,
+    posts: null,
+  });
 
-  componentDidMount(){
+  useEffect(() => {
+    setBlogListState({loading: true });
     const apiURL = 'http://127.0.0.1:8000/api/';
     fetch(apiURL)
-      .then((response) => response.json())
-      .then((data) => console.log(data));
-  }
-  render() {
-    return <h1>BLOG PAGE</h1>;
-  }
-};
+      .then((data) => data.json())
+      .then((posts) => {
+        setBlogListState({loading: false, posts: posts });
+      });
+  }, [setBlogListState]);
+  return (
+    <div>
+      <PostLoading isloading={BlogListState.loading} posts={BlogListState.posts} />
+    </div>
+  );
+}
 
-export default index;
+export default BlogList;

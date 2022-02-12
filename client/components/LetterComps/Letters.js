@@ -1,12 +1,12 @@
-import { Flex } from '@chakra-ui/react';
+import { color, Flex, useColorModeValue } from '@chakra-ui/react';
 import SvgLettersFire from './/SvgLettersFire'
 import SvgLettersWaves from './/SvgLettersWaves'
 
 const Letters = ({ toggleDark }) => {
-  
+    const colortoggle = useColorModeValue('white','gray.800')
 return (
     <Flex justifyContent='center' height={500} mt='200px' position='static'>
-        {toggleDark ?    <SvgLettersFire/> : <SvgLettersWaves/> }
+        {colortoggle==='gray.800' ?    <SvgLettersFire/> : <SvgLettersWaves/> }
     </Flex>
 )
 };
@@ -36,7 +36,9 @@ export default Letters;
 
 
 
-
+{/* <Flex justifyContent='center' height={500} mt='200px' position='static'>
+        {toggleDark ?    <SvgLettersFire/> : <SvgLettersWaves/> }
+    </Flex> */}
 
 
 
