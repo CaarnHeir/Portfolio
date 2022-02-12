@@ -1,11 +1,6 @@
 import { Center, Box, Image } from "@chakra-ui/react";
 
 
-
-
-
-
-
 const Posts = (props) => {
     const { posts } = props;
     console.log(posts);
