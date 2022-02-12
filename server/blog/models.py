@@ -2,8 +2,9 @@ from django.db import models
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 
+def upload_to(instance, filename):
+    return 'posts/{filename}'.format(filename=filename)
 
-# Create your models here.
 class Category(models.Model):
     name = models.CharField(max_length=100)
 
