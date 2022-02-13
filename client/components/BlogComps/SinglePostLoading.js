@@ -1,8 +1,8 @@
 import React from 'react'
 import { Center, Spinner } from '@chakra-ui/react'
 
-function PostLoading(Component, isLoading) {
-  return function PostLoadingComponent({isloading, ...props}){
+function SinglePostLoading(Component, isLoading) {
+  return function SinglePostLoadingComponent({isloading, ...props}){
       if (!isLoading) return  <Component {...props}/>;
       return(
           <Center mt={200}>
@@ -12,4 +12,4 @@ function PostLoading(Component, isLoading) {
   };
 }
 
-export default PostLoading;
+export default SinglePostLoading;

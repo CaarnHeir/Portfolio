@@ -1,4 +1,4 @@
-import { Center, Box, Image } from "@chakra-ui/react";
+import { Link, Box, Image } from "@chakra-ui/react";
 
 
 const Posts = (props) => {
@@ -7,11 +7,11 @@ const Posts = (props) => {
     
     if (!posts || posts.length === 0) return <p>Cannot find any posts, apologies</p>;
     return (
-        <Center mt={200}>
-
+        <>
             {posts.map((post) =>{
                 return(
-                    <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
+                    <Link href={`/blog/${post.id}`}>
+                    <Box borderWidth='3px' borderRadius='lg' overflow='hidden'>
                         <Image src={post.image} />
 
                         <Box p='6'>
@@ -48,10 +48,10 @@ const Posts = (props) => {
                             </Box>
                         </Box>
                     </Box>
+                </Link>
                 )
             })}
-            
-        </Center>
+            </>
         
     )
 }

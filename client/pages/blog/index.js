@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { Center, SimpleGrid } from "@chakra-ui/react";
+
 import Posts from '../../components/BlogComps/Posts'
 import PostLoadingComponent from '../../components/BlogComps/PostLoading'
 
@@ -19,9 +21,11 @@ function BlogList() {
       });
   }, [setBlogListState]);
   return (
-    <div>
-      <PostLoading isloading={BlogListState.loading} posts={BlogListState.posts} />
-    </div>
+    <Center mt={200} marginLeft={30} marginRight ={30}>
+      <SimpleGrid minChildWidth='350px' spacing='30px'>
+        <PostLoading isloading={BlogListState.loading} posts={BlogListState.posts} />
+      </SimpleGrid>
+    </Center>
   );
 }
 
