@@ -4,7 +4,7 @@ import ContactForm from './ContactForm';
 
 const ContactMe = () => {
     return (
-        <Center h='600px'>
+        <Center >
       <ContactForm/>
     </Center>
     )

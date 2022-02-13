@@ -26,11 +26,6 @@ function BlogPostPage() {
           });
     }, [router.isReady]);
 
-    // useEffect(() => {
-        
-    //   }, [setPostState]); 
-
-    
     
     return(
            <SinglePostLoading isloading={PostState.loading} post={PostState.post}/>

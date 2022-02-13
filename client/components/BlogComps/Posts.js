@@ -1,4 +1,4 @@
-import { Link, Box, Image } from "@chakra-ui/react";
+import { Link, Box, Image, VStack, StackDivider } from "@chakra-ui/react";
 
 
 const Posts = (props) => {
@@ -12,10 +12,10 @@ const Posts = (props) => {
                 return(
                     <Link href={`/blog/${post.id}`}>
                     <Box borderWidth='3px' borderRadius='lg' overflow='hidden'>
-                        <Image src={post.image} />
+                        <Image src={post.image} maxHeight='300px' maxWidth='1000px'/>
 
                         <Box p='6'>
-                            <Box display='flex' alignItems='baseline'>
+                            <VStack  spacing={4} marginLeft='5%' marginRight='5%'>
                             <Box
                             mt='1'
                             fontWeight='semibold'
@@ -33,7 +33,7 @@ const Posts = (props) => {
                                     textTransform='uppercase'
                                     ml='2'
                                 >
-                                {post.excerpt}
+                                {post.published}
                                 </Box>
                                 <Box
                                     color='gray.500'
@@ -43,9 +43,9 @@ const Posts = (props) => {
                                     textTransform='uppercase'
                                     ml='2'
                                 >
-                                {post.published}
+                                {post.excerpt}
                                 </Box>
-                            </Box>
+                            </VStack>
                         </Box>
                     </Box>
                 </Link>

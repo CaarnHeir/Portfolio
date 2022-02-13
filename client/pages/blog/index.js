@@ -22,7 +22,7 @@ function BlogList() {
   }, [setBlogListState]);
   return (
     <Center mt={200} marginLeft={30} marginRight ={30}>
-      <SimpleGrid minChildWidth='350px' spacing='30px'>
+      <SimpleGrid minChildWidth='350px' spacing='100px'>
         <PostLoading isloading={BlogListState.loading} posts={BlogListState.posts} />
       </SimpleGrid>
     </Center>

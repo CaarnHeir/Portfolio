@@ -1,6 +1,6 @@
-import { Box, Center, SimpleGrid, GridItem, HStack, Button, Container, VStack } from '@chakra-ui/react'
-import { DiMongodb, DiReact, DiNodejs  } from "react-icons/di"
-import { SiExpress } from 'react-icons/si'
+import { Box, Center,HStack, Button, Image } from '@chakra-ui/react'
+import { DiMongodb, DiReact, DiNodejs, DiDjango  } from "react-icons/di"
+import { SiExpress, SiPostgresql } from 'react-icons/si'
 import { FaGithub } from 'react-icons/fa'
 import { CgWebsite } from 'react-icons/cg'
 
@@ -21,14 +21,21 @@ const Portfolio = () => {
 
   }
 
+  // columns={[2, null, 3]} 
+
   return (
-    <Center  h='700px'>
-      <SimpleGrid  spacing='70px' columns={[2, null, 3]}  >
-          <GridItem>
-            <Box maxW='md' borderWidth='1px' borderRadius='lg' overflow='hidden'>
-                <video autoPlay loop muted>
+    <Center marginBottom= '80px'>
+      <HStack spacing={10}>
+      {/* <SimpleGrid  spacing='40px' minChildWidth={450} columns={2}> */}
+          {/* <GridItem> */}
+            <Box maxW='md'  maxH= 'md' minHeight='md' borderWidth='1px' borderRadius='lg' overflow='hidden'>
+                
+
+                <video autoPlay loop muted  >
                   <source src='./videos/Application_Tracker_Video_Loop.mp4' type='video/mp4'/>
                 </video>
+
+                
               <Box p='7'>
                 <Box display='flex' alignItems='baseline'>
                   <Box
@@ -67,13 +74,13 @@ const Portfolio = () => {
               </HStack>  
             </Box>
           </Box>
-          </GridItem>
-          <GridItem>
-            <Box maxW='md' borderWidth='1px' borderRadius='lg' overflow='hidden'>
-                <video autoPlay loop muted>
-                  <source src='./videos/Application_Tracker_Video_Loop.mp4' type='video/mp4'/>
+          {/* </GridItem> */}
+          {/* <GridItem> */}
+            <Box maxW='md' maxH= 'md' minHeight='md' borderWidth='1px' borderRadius='lg' overflow='hidden'>
+                <video autoPlay loop muted >
+                  <source src='./videos/portfolio.mp4' type='video/mp4'/>
                 </video>
-              <Box p='7'>
+              <Box p='7' alignItems='end' >
                 <Box display='flex' alignItems='baseline'>
                   <Box
                     color='gray.400'
@@ -85,8 +92,9 @@ const Portfolio = () => {
                     display='flex'
                     alignItems='center'
                     justifyContent='space-evenly'
+                    marginTop='62px'
                   >
-                     <DiMongodb/>MongoDB &bull; <SiExpress/>Express &bull; <DiReact/>React &bull;<DiNodejs/>Node
+                     <SiPostgresql/>Postgresql &bull; <DiDjango/>Django &bull; NEXT.JS &bull; Chakra UI
                   </Box>
                 </Box>
               <Box
@@ -97,7 +105,7 @@ const Portfolio = () => {
                 lineHeight='tight'
                 isTruncated
               >
-                {property.title}
+                Portfolio Website 
               </Box>
               <HStack mt='4' ml='2'>
                 <a href='https://github.com/CaarnHeir/Portfolio' target='_blank'>
@@ -105,18 +113,17 @@ const Portfolio = () => {
                     GitHub
                   </Button>
                 </a>
-                <Button leftIcon={<CgWebsite />}>
-                  Live Site
-                </Button>
+                
               </HStack>  
             </Box>
           </Box>
-          </GridItem>
-          <GridItem>
-            <Box maxW='md' borderWidth='1px' borderRadius='lg' overflow='hidden'>
-                <video autoPlay loop muted>
+          {/* </GridItem> */}
+          {/* <GridItem> */}
+            <Box maxW='md' maxH= 'md' minHeight='md'  borderWidth='1px' borderRadius='lg' overflow='hidden'>
+                {/* <video autoPlay loop muted>
                   <source src='./videos/Application_Tracker_Video_Loop.mp4' type='video/mp4'/>
-                </video>
+                </video> */}
+                <Image src='/comingsoon.jpg' maxHeight='287.33px'/>
               <Box p='7'>
                 <Box display='flex' alignItems='baseline'>
                   <Box
@@ -130,7 +137,7 @@ const Portfolio = () => {
                     alignItems='center'
                     justifyContent='space-evenly'
                   >
-                     <DiMongodb/>MongoDB &bull; <SiExpress/>Express &bull; <DiReact/>React &bull;<DiNodejs/>Node
+                     <DiMongodb/>MongoDB &bull; Fast API &bull; NEXT.JS &bull; Chakra UI
                   </Box>
                 </Box>
               <Box
@@ -141,7 +148,7 @@ const Portfolio = () => {
                 lineHeight='tight'
                 isTruncated
               >
-                {property.title}
+                ERP System with Optimization
               </Box>
               <HStack mt='4' ml='2'>
                 <a href='https://github.com/CaarnHeir/Application_Repo' target='_blank'>
@@ -149,14 +156,15 @@ const Portfolio = () => {
                     GitHub
                   </Button>
                 </a>
-                <Button leftIcon={<CgWebsite />}>
+                {/* <Button leftIcon={<CgWebsite />}>
                   Live Site
-                </Button>
+                </Button> */}
               </HStack>  
             </Box>
           </Box>
-          </GridItem>
-      </SimpleGrid>
+          {/* </GridItem> */}
+      {/* </SimpleGrid> */}
+      </HStack>
     </Center>
   )
 };
