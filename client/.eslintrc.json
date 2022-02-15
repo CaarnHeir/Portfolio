@@ -1,7 +1,7 @@
-// {
-//     "extends": ["next/babel","next/core-web-vitals"]
-// }
-
 {
-    "extends": ["eslint:recommended", "next/babel"]
+    "extends": ["next/babel","next/core-web-vitals"]
 }
+
+// {
+//     "extends": ["eslint:recommended", "next/babel"]
+// }
