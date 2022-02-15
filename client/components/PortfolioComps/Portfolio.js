@@ -68,9 +68,12 @@ const Portfolio = () => {
                     GitHub
                   </Button>
                 </a>
+                <a href='https://applicationtrackerlive.netlify.app/' target='_blank'>
                 <Button leftIcon={<CgWebsite />}>
                   Live Site
                 </Button>
+
+                </a>
               </HStack>  
             </Box>
           </Box>
@@ -151,7 +154,7 @@ const Portfolio = () => {
                 ERP System with Optimization
               </Box>
               <HStack mt='4' ml='2'>
-                <a href='https://github.com/CaarnHeir/Application_Repo' target='_blank'>
+                <a href='https://github.com/CaarnHeir/' target='_blank'>
                   <Button leftIcon={<FaGithub />}>
                     GitHub
                   </Button>

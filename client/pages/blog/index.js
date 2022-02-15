@@ -13,7 +13,7 @@ function BlogList() {
 
   useEffect(() => {
     setBlogListState({loading: true });
-    const apiURL = 'http://127.0.0.1:8000/api/';
+    const apiURL = 'https://caarnportfolio.herokuapp.com/api/';
     fetch(apiURL)
       .then((data) => data.json())
       .then((posts) => {

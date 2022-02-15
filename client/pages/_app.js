@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
   <ChakraProvider>
+    <title>Caarn Heir</title>
     <Layout>
       <Component {...pageProps} />
     </Layout>

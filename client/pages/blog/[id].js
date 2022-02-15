@@ -18,7 +18,7 @@ function BlogPostPage() {
         if(!router.isReady) return;
         console.log('RUNNING');
         console.log(id)
-        const apiURL = `http://127.0.0.1:8000/api/` + id;
+        const apiURL = `https://caarnportfolio.herokuapp.com/api/` + id;
         fetch(apiURL)
           .then((data) => data.json())
           .then((post) => {
