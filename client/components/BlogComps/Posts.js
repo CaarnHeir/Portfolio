@@ -12,7 +12,7 @@ const Posts = (props) => {
                 return(
                     <Link href={`/blog/${post.id}`}>
                     <Box borderWidth='3px' borderRadius='lg' overflow='hidden'>
-                        <Image src={post.image} maxHeight='300px' maxWidth='1000px'/>
+                        <Image src='/Blogpost1.png' maxHeight='300px' maxWidth='1000px'/>
 
                         <Box p='6'>
                             <VStack  spacing={4} marginLeft='5%' marginRight='5%'>

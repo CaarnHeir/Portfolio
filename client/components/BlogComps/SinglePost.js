@@ -8,7 +8,7 @@ export const SinglePost = ({post}) => {
     <Center mt={200}>
         <Box borderWidth='3px' borderRadius='lg' overflow='hidden' marginLeft='10%' marginRight='10%'>
           <Center>
-            <Image src={post && post.image} />
+            <Image src='/Blogpost1.png'/>
             </Center>
             <Box p='6'>
             <VStack divider={<StackDivider borderColor='gray.200'/>} spacing={4} marginLeft='5%' marginRight='5%'>
