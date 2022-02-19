@@ -2,8 +2,8 @@ import { useColorMode } from '@chakra-ui/react';
 import React, { useState } from 'react'
 
 import styles from '../styles/Layout.module.css'
-import Footer from './Footer';
-import Navbar from './Navbar'
+import Footer from './footer';
+import Navbar from './navbar'
 
 
 const Layout = ({ children }) => {
