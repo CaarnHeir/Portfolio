@@ -30,7 +30,7 @@ const ToolsIUse = () => {
             <Image src='/redux.png' className={styles.image} />      
           </WrapItem>
           <WrapItem>
-            <Image src='/postgresql.png' className={styles.image} />
+            <Image src='/postgresql12.png' className={styles.image} />
           </WrapItem>
           <WrapItem>
             <Image src='/javascript.png' className={styles.image}/>
