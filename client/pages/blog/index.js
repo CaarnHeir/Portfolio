@@ -13,7 +13,7 @@ function BlogList() {
 
   useEffect(() => {
     setBlogListState({loading: true });
-    const apiURL = 'https://caarnportfolio.herokuapp.com/api';
+    const apiURL = 'https://hidden-caverns-99891.herokuapp.com/https://caarnportfolio.herokuapp.com/api';
     fetch(apiURL)
       .then((data) => data.json())
       .then((posts) => {
