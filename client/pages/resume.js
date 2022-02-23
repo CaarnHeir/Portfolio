@@ -13,17 +13,17 @@ const resume = () => {
   <HeadShot/>
   <Skeleton startColor='gray.400' endColor='#1A202C' height='20px'  justifyContent='center' fadeDuration='.01' speed='5'/>
   <Center h='100px' marginTop='30px'>
-      <Flex className={styles.header} fontFamily='Montserrat'  fontWeight='bold'>TOOLS I USE:</Flex>
+      <Flex className={styles.header} fontFamily='Montserrat'  fontWeight='bold'>ABOUT ME:</Flex>
     </Center>
     <AboutMe />
   <Skeleton startColor='gray.400' endColor='#1A202C' height='20px'  justifyContent='center' fadeDuration='.01' speed='5'/>
   <Center h='100px' marginTop='50px'>
-      <Flex className={styles.header} fontFamily='Montserrat' fontWeight='bold' marginBottom='50px'>WORK HISTORY:</Flex>
+      <Flex className={styles.header} fontFamily='Montserrat' fontWeight='bold' marginBottom='50px'>TOOLS I USE:</Flex>
     </Center>
     <ToolsIUse />
   <Skeleton startColor='gray.400' endColor='#1A202C' height='20px'  justifyContent='center' fadeDuration='.01' speed='5'/>
   <Center h='100px' marginTop='30px'>
-      <Flex className={styles.header} fontFamily='Montserrat' fontWeight='bold'>ABOUT ME:</Flex>
+      <Flex className={styles.header} fontFamily='Montserrat' fontWeight='bold'>WORK HISTORY:</Flex>
     </Center>
   <ResumeTimeline />
   </>
